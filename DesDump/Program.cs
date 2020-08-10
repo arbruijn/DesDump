@@ -223,7 +223,13 @@ namespace DesDump
             }
             if (version == Classic.Version.UNKNOWN)
             {
-                Console.WriteLine("No Descent 1 / Descent 2 data files found in " + dir);
+                if (dir == "")
+                {
+                    Console.WriteLine("Please specify a Descent 1 / Descent 2 data directory as the first argument, e.g. DesDump c:\\games\\descent");
+                    Console.WriteLine("Optionally add an output directory, otherwise files will be written to the current directory.");
+                }
+                else
+                    Console.WriteLine("No Descent 1 / Descent 2 data files found in " + dir);
                 return;
             }
             var hog = new Hog(Path.Combine(dir, hogName));
