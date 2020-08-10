@@ -29,6 +29,48 @@ namespace DesDump
                     "Omega Defense Spawn Clone", "BPER Bot Clone", "Spider Clone", "Spawn Clone", "Ice Boss", "Spawn",
                     "Final Boss", "Mini Reactor"};
 
+        // poly names from LibDescent, Copyright (c) 2019 SaladBadger
+        public static string[] d2polymodels = {"Medium Hulk", "Medium Hulk LOD", "Medium Lifter", "Medium Lifter LOD", "Spider Processor",
+                      "Spider Processor LOD", "Class 1 Drone", "Class 1 Drone LOD", "Class 2 Drone", "Class 2 Drone LOD", "Cloaked Driller",
+                      "Cloaked Driller LOD", "Cloaked Medium Hulk", "Cloaked Medium Hulk LOD", "Supervisor", "Secondary Lifter", "Secondary Lifter LOD",
+                      "Heavy Driller", "Heavy Driller LOD", "Gopher", "Laser Platform Robot", "Missile Platform Robot", "Splitter Pod", "Baby Spider",
+                      "Baby Spider LOD", "Fusion Hulk", "Supermech", "Supermech LOD", "Level 7 Boss", "Cloaked Lifter", "Cloaked Lifter LOD",
+                      "Class 1 Driller", "Class 1 Driller LOD", "Light Hulk", "Light Hulk LOD", "Advanced Lifter", "Advanced Lifter LOD",
+                      "Defense Prototype", "Defense Prototype LOD", "Level 27 Boss", "BPER Bot", "Smelter", "Smelter LOD", "Ice Spindle",
+                      "Bulk Destroyer", "TRN Racer", "Fox Attack Bot", "Sidearm", "Sidearm LOD", "Red Fatty Boss", "New Boss", "Guidebot",
+                      "Mine Guard", "Mine Guard LOD", "Evil Twin", "ITSC Bot", "ITD Bot", "ITD Bot LOD", "PEST Bot", "PEST LOD",
+                      "PIG", "PIG Bot LOD", "Diamond Claw", "Diamond Claw LOD", "Hornet", "Thief Bot", "Thief Bot (LD)", "Seeker",
+                      "E-Bandit", "Fire Boss", "Water Boss", "Boarshead", "Spider", "Omega Defense Spawn", "Sidearm Modula", "LOU Guard",
+                      "Alien 1 Boss", "Popcorn Miniboss", "Cloaked Diamond Claw", "Cloaked Diamond Claw LOD", "Cloaked Smelter", "Cloaked Smelter LOD",
+                      "Guppy", "Smelter Clone", "Smelter Clone LOD", "Omega Defense Spawn Clone", "BPER Bot Clone", "Spider Clone", "Spawn", "Ice Boss",
+                      "Spawn Clone", "Final Boss", "Mini Reactor", "Descent 1 Reactor", "Descent 1 Reactor Destroyed", "Alien Reactor", "Ailen Reactor Destroyed",
+                      "Zeta Aquilae Reactor", "Zeta Aquilae Reactor Destroyed", "Water Reactor", "Water Reactor Destroyed", "Ailen 1 Reactor",
+                      "Ailen 1 Reactor Destroyed", "Fire Reactor", "Fire Reactor Destroyed", "Ice Reactor", "Ice Reactor Destroyed", "Marker", "Pyro GX",
+                      "Pyro GX LOD", "Pyro GX Debris", "Red Laser", "Red Laser LOD", "Red Laser LOD 2", "Red Laser Core", "Purple Laser", "Purple Laser LOD",
+                      "Purple Laser LOD 2", "Purple Laser Core", "Light Blue Laser", "Light Blue Laser LOD", "Light Blue Laser LOD2", "Light Blue Laser Core", "Green Laser",
+                      "Green Laser LOD", "Green Laser LOD 2", "Green Laser Core", "Concussion Missile", "Flare", "Robot Blue Laser", "Robot Blue Laser Core",
+                      "Fusion Blob", "Fusion Blob Core", "Homing Missile", "Smart Missile", "Mega Missile", "Robot Homing Missile", "Robot Concussion Missile", "Robot Red Laser",
+                      "Robot Red Laser Core", "Robot Green Laser", "Robot Green Laser Core", "Robot Mega Missile", "Yellow Laser", "Yellow Laser LOD", "Yellow Laser LOD 2", "Yellow Laser Core",
+                      "White Laser", "White Laser LOD", "White Laser LOD 2", "White Laser Core", "Flash Missile", "Guided Missile", "Mercury Missile", "Earthshaker Missile",
+                      "Robot Vulcan", "Robot White Laser", "Robot White Laser Core", "Robot Flash Missile", "Mine", "Earthshaker Child", "Robot Mercury Missile", "Robot Smart Missile",
+                      "Robot Earthshaker Missile", "Robot Earthshaker Missile Child", "Robot Homing Flash Missile"};
+
+        public static string[] d1polymodels = {"Medium Hulk", "Medium Hulk LOD", "Medium Lifter", "Medium Lifter LOD", "Spider Processor",
+                      "Spider Processor LOD", "Class 1 Drone", "Class 1 Drone LOD", "Class 2 Drone", "Class 2 Drone LOD", "Cloaked Driller",
+                      "Cloaked Driller LOD", "Cloaked Medium Hulk", "Cloaked Medium Hulk LOD", "Supervisor", "Secondary Lifter", "Secondary Lifter LOD",
+                      "Heavy Driller", "Heavy Driller LOD", "Gopher", "Laser Platform Robot", "Missile Platform Robot", "Splitter Pod", "Baby Spider",
+                      "Baby Spider LOD", "Fusion Hulk", "Supermech", "Supermech LOD", "Level 7 Boss", "Cloaked Lifter", "Cloaked Lifter LOD",
+                      "Class 1 Driller", "Light Hulk", "Light Hulk LOD", "Advanced Lifter", "Advanced Lifter LOD",
+                      "Defense Prototype", "Defense Prototype LOD", "Level 27 Boss",
+                      "Descent 1 Reactor", "Descent 1 Reactor Destroyed",
+                      "Exit", "Exit Destroyed",
+                      "Pyro GX", "Pyro GX LOD", "Pyro GX Debris",
+                      "Red Laser", "Red Laser LOD", "Red Laser LOD 2", "Red Laser Core", "Purple Laser", "Purple Laser LOD",
+                      "Purple Laser LOD 2", "Purple Laser Core", "Light Blue Laser", "Light Blue Laser LOD", "Light Blue Laser LOD2", "Light Blue Laser Core", "Green Laser",
+                      "Green Laser LOD", "Green Laser LOD 2", "Green Laser Core", "Concussion Missile", "Flare", "Robot Blue Laser", "Robot Blue Laser Core",
+                      "Fusion Blob", "Fusion Blob Core", "Homing Missile", "Smart Missile", "Mega Missile", "Robot Homing Missile", "Robot Concussion Missile", "Robot Red Laser",
+                      "Robot Red Laser Core", "Robot Green Laser", "Robot Green Laser Core", "Robot Mega Missile"};
+
         static byte bit5to8(int x)
         {
             return (byte)((x << 3) | (x >> 2));
@@ -89,7 +131,7 @@ namespace DesDump
             var modelReader = new ModelReader();
 
             int texCount = model.n_textures;
-            int matCount = texCount + 2; // allow 2 flat color materials
+            int matCount = texCount + 3; // allow 3 flat color materials
             var r = new BinaryReader(new MemoryStream(model.data));
             var flatColors = new List<int>();
             modelReader.Reset(matCount);
@@ -161,12 +203,15 @@ namespace DesDump
             string pigName = null;
             string palName = null;
             string hogName = null;
+            string[] polyNames = null;
+
             if (File.Exists(Path.Combine(dir, "descent2.hog")) && File.Exists(Path.Combine(dir, "descent2.ham")) && File.Exists(Path.Combine(dir, "groupa.pig")))
             {
                 version = Classic.Version.D2;
                 hogName = "descent2.hog";
                 pigName = "groupa.pig";
                 palName = "groupa.256";
+                polyNames = d2polymodels;
             }
             else if (File.Exists(Path.Combine(dir, "descent.hog")) && File.Exists(Path.Combine(dir, "descent.pig")))
             {
@@ -174,6 +219,7 @@ namespace DesDump
                 hogName = "descent.hog";
                 pigName = "descent.pig";
                 palName = "palette.256";
+                polyNames = d1polymodels;
             }
             if (version == Classic.Version.UNKNOWN)
             {
@@ -201,8 +247,13 @@ namespace DesDump
             }
 
             var outDir = args.Length >= 2 ? args[1] : "";
-            for (int robotIdx = 0; robotIdx < data.N_robot_types; robotIdx++)
-                DumpModel(data.RobotInfo[robotIdx].model_num, Path.Combine(outDir, robots[robotIdx].Replace(' ', '_') + ".obj"));
+            //for (int robotIdx = 0; robotIdx < data.N_robot_types; robotIdx++)
+            //    DumpModel(data.RobotInfo[robotIdx].model_num, Path.Combine(outDir, robots[robotIdx].Replace(' ', '_') + ".obj"));
+            for (int modelIdx = 0; modelIdx < data.N_polygon_models; modelIdx++)
+            {
+                string name = modelIdx < polyNames.Length ? polyNames[modelIdx] : "model_" + modelIdx.ToString("000");
+                DumpModel(modelIdx, Path.Combine(outDir, name.Replace(' ', '_') + ".obj"));
+            }
         }
 
         static void Main(string[] args)
