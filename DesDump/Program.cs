@@ -55,12 +55,12 @@ namespace DesDump
                       "Robot Vulcan", "Robot White Laser", "Robot White Laser Core", "Robot Flash Missile", "Mine", "Earthshaker Child", "Robot Mercury Missile", "Robot Smart Missile",
                       "Robot Earthshaker Missile", "Robot Earthshaker Missile Child", "Robot Homing Flash Missile"};
 
-        public static string[] d1polymodels = {"Medium Hulk", "Medium Hulk LOD", "Medium Lifter", "Medium Lifter LOD", "Spider Processor",
+        public static string[] d1polymodels = {"Medium Hulk", "Medium Hulk LOD", "Medium Lifter", "Spider Processor",
                       "Spider Processor LOD", "Class 1 Drone", "Class 1 Drone LOD", "Class 2 Drone", "Class 2 Drone LOD", "Cloaked Driller",
                       "Cloaked Driller LOD", "Cloaked Medium Hulk", "Cloaked Medium Hulk LOD", "Supervisor", "Secondary Lifter", "Secondary Lifter LOD",
                       "Heavy Driller", "Heavy Driller LOD", "Gopher", "Laser Platform Robot", "Missile Platform Robot", "Splitter Pod", "Baby Spider",
                       "Baby Spider LOD", "Fusion Hulk", "Supermech", "Supermech LOD", "Level 7 Boss", "Cloaked Lifter", "Cloaked Lifter LOD",
-                      "Class 1 Driller", "Light Hulk", "Light Hulk LOD", "Advanced Lifter", "Advanced Lifter LOD",
+                      "Class 1 Driller", "Class 1 Driller LOD", "Light Hulk", "Light Hulk LOD", "Advanced Lifter", "Advanced Lifter LOD",
                       "Defense Prototype", "Defense Prototype LOD", "Level 27 Boss",
                       "Descent 1 Reactor", "Descent 1 Reactor Destroyed",
                       "Exit", "Exit Destroyed",
